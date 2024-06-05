@@ -171,13 +171,13 @@ clean_names = {"Press [dbar]": "pressure",
                'cast_number': 'cast_number',
                'longitude': 'longitude',
                "Legato3 Pressure (bar)": "pressure",
-               "Legato3 Temperature (�C)": "temperature",
+               "Legato3 Temperature (deg C)": "temperature",
                "Legato3 Salinity (PSU)": "salinity",
                "Legato3 Conductivity (mS/cm)": "conductivity",
                'Legato3 Oxygen Concentration (umol/L)': 'oxygen_concentration',
                'Legato3 Chlorophyll (?)': 'chlorophyll',
-               'INX Latitude (�)': 'latitude',
-               'INX Longitude (�)': 'longitude',
+               'INX Latitude (deg)': 'latitude',
+               'INX Longitude (deg)': 'longitude',
                }
 
 
@@ -301,7 +301,7 @@ def get_attrs(ds):
         'area': 'Baltic Sea',
         'cdm_data_type': 'TrajectoryProfile',
         'conventions': 'CF-1.10',
-        'country': 'SWE',
+        'institution_country': 'SWE',
         'creator_email': 'callum.rollo@voiceoftheocean.org',
         'creator_name': 'Callum Rollo',
         'creator_type': 'Person',
@@ -321,7 +321,7 @@ def get_attrs(ds):
         'keywords': 'CTD, Oceans, Ocean Pressure, Water Pressure, Ocean Temperature, Water Temperature, Salinity/Density, '
                     'Conductivity, Density, Salinity',
         'keywords_vocabulary': 'GCMD Science Keywords',
-        'license': 'Creative Commons Attribution 4.0 (https://creativecommons.org/licenses/by/4.0/) This study used data collected and made freely available by Voice of the Ocean Foundation (https://voiceoftheocean.org) accessed from https://erddap.observations.voiceoftheocean.org/erddap/index.html',
+        'licence': 'Creative Commons Attribution 4.0 (https://creativecommons.org/licenses/by/4.0/) This study used data collected and made freely available by Voice of the Ocean Foundation (https://voiceoftheocean.org) accessed from https://erddap.observations.voiceoftheocean.org/erddap/index.html',
         "title": "CTD from glider deployment/recovery",
         'disclaimer': "Data, products and services from VOTO are provided 'as is' without any warranty as to fitness for "
                       "a particular purpose.",
@@ -332,7 +332,6 @@ def get_attrs(ds):
         'source': 'Voice of the Ocean Foundation',
         'sourceUrl': 'https://observations.voiceoftheocean.org',
         'standard_name_vocabulary':'CF Standard Name Table v70',
-        'source': 'Observational data from handheld CTD casts',
         'time_coverage_end': str(np.nanmax(ds.time)).split(".")[0],
         'time_coverage_start': str(np.nanmin(ds.time)).split(".")[0],
         'variables': list(ds)
